@@ -1,0 +1,14 @@
+{
+  "name": "agbis-price-adapter",
+  "version": "1.0.0",
+  "description": "Преобразует объект агбиса в структуру представления",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "dist/test.ts"
+  },
+  "keywords": [
+    "agbis"
+  ],
+  "author": "Dzhigurda A Anton <info@pikada-lab.ru>",
+  "license": "ISC"
+}
