@@ -14,14 +14,13 @@ scripts:
     - codecov -f coverage/*.json
 deploy:
     provider: npm
-    email: "info@fake-mm.ru"
-    api_key: $NPM_TOKEN
+    email: "info@pikada-lab.ru"
     on:
         branch: main
     
 notifications:
     email: 
       recipients:
-        - info@fake-mm.ru
+        - info@pikada-lab.ru
     on_success: never
     on_failure: always
