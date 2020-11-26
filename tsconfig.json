@@ -6,7 +6,7 @@
     "moduleResolution": "node",
     "sourceMap": true,
     "module": "commonjs",
-    "target": "es6",
+    "target": "es5",
     "allowJs": true,
     "rootDir": "src",
     "declaration": true
@@ -15,6 +15,6 @@
     "src/**/*"
   ],
   "exclude": [
-    "example/*"
+    "dist/*"
   ]
 }

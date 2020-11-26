@@ -1,14 +1,27 @@
 {
   "name": "agbis-price-adapter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Преобразует объект агбиса в структуру представления",
   "main": "dist/index.js",
   "scripts": {
-    "test": "dist/test.ts"
+    "start": "node ./dist/example.js", 
+    "test": "nyc mocha  dist/test --timeout 10000",
+    "posttest": "nyc report --reporter=json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pikada-lab/agbis-price-adapter"
   },
   "keywords": [
     "agbis"
   ],
   "author": "Dzhigurda A Anton <info@pikada-lab.ru>",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^14.14.10",
+    "mocha": "^7.2.0",
+    "codecov": "^3.8.1",
+    "nyc": "^15.1.0"
+  }
 }

@@ -1,0 +1,27 @@
+language: node_js
+node_js:
+    - 14.15.1
+cache:  npm 
+sudo: false
+
+install:
+    - npm ci
+    - npm install typescript -g
+    - npm install codecov -g    
+scripts: 
+    - tsc
+    - npm test 
+    - codecov -f coverage/*.json
+deploy:
+    provider: npm
+    email: "info@fake-mm.ru"
+    api_key: $NPM_TOKEN
+    on:
+        branch: main
+    
+notifications:
+    email: 
+      recipients:
+        - info@fake-mm.ru
+    on_success: never
+    on_failure: always
