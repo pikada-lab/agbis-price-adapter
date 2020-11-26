@@ -15,6 +15,7 @@ scripts:
 deploy:
     provider: npm
     email: "info@pikada-lab.ru"
+    api_key: $NPM_TOKEN
     on:
         branch: main
     
